@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dashboard - Assessment App</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+
+    <header class="container">
+        <h1 class="title-gradient">Your Courses</h1>
+        <button id="logoutBtn" class="btn btn-logout">Logout</button>
+    </header>
+
+    <main class="container fade-in">
+        <div class="glass-panel" style="margin-bottom: 2rem;">
+            <h2>Create New Course</h2>
+            <form id="createCourseForm" style="display: flex; gap: 1rem;">
+                <input type="text" id="courseTitle" placeholder="Course Title (e.g., Advanced React)" required>
+                <button type="submit" class="btn btn-primary" style="white-space: nowrap;">Add Course</button>
+            </form>
+        </div>
+
+        <div id="coursesGrid" class="grid">
+            <!-- Courses will be loaded here -->
+        </div>
+    </main>
+
+    <script src="js/api.js"></script>
+    <script src="js/app.js"></script>
+</body>
+
+</html>

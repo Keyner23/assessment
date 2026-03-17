@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Course - Assessment App</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+
+    <header class="container">
+        <div style="display: flex; align-items: center; gap: 1rem;">
+            <a href="dashboard.html" class="btn btn-logout"
+                style="border: 1px solid var(--glass-border); color: var(--text-color);">Back</a>
+            <h1 class="title-gradient" id="pageTitle">Course Details</h1>
+        </div>
+        <button onclick="api.logout()" class="btn btn-logout">Logout</button>
+    </header>
+
+    <main class="container fade-in">
+        <div class="glass-panel" style="margin-bottom: 2rem;">
+            <h2>Add Lesson</h2>
+            <form id="createLessonForm" style="display: grid; grid-template-columns: 2fr 1fr auto; gap: 1rem;">
+                <input type="text" id="lessonTitle" placeholder="Lesson Title (e.g., Intro to Hooks)" required>
+                <input type="number" id="lessonOrder" placeholder="Order (e.g., 1)" required min="1">
+                <button type="submit" class="btn btn-primary">Add Lesson</button>
+            </form>
+        </div>
+
+        <div id="lessonsList">
+            <!-- Lessons will be loaded here -->
+        </div>
+    </main>
+
+    <script src="js/api.js"></script>
+    <script src="js/app.js"></script>
+</body>
+
+</html>
