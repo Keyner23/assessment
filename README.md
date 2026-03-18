@@ -64,15 +64,15 @@ https://localhost:xxxx/swagger
 
 🔐 Autenticación
 
-El sistema utiliza JWT (JSON Web Tokens):
+- El sistema utiliza JWT (JSON Web Tokens):
 
-Registrar usuario
+- Registrar usuario
 
-Iniciar sesión
+- Iniciar sesión
 
-Copiar el token generado
+- Copiar el token generado
 
-Usarlo en Swagger con el botón Authorize
+- Usarlo en Swagger con el botón Authorize
 
 📌 Funcionalidades principales
 👨‍🏫 Profesor
